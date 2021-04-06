@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+         >
+        <TextView
+            android:layout_marginLeft="302pt"
+            android:layout_marginTop="72pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40px"
+            android:textColor="@color/white"
+            android:text="@string/head_str"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="455pt"
+            android:layout_marginTop="130pt"
+            android:text="กรุณาแสกน บัตรพนักงาน "
+            android:textColor="@color/white"
+            android:textSize="30px"
+            />
+        <LinearLayout
+            android:layout_marginTop="219pt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/cellNo1"
+                android:layout_width="500pt"
+                android:layout_height="455pt"
+                android:padding="2pt"
+                android:visibility="gone"
+                android:background="@drawable/border_bg"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/cellNo2"
+                android:layout_width="500pt"
+                android:layout_height="455pt"
+                android:layout_marginHorizontal="5pt"
+                android:padding="2pt"
+                android:visibility="gone"
+                android:background="@drawable/border_bg"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/cellNo3"
+                android:layout_width="225pt"
+                android:layout_height="455pt"
+                android:padding="2pt"
+                android:visibility="gone"
+                android:layout_marginHorizontal="5pt"
+                android:background="@drawable/border_bg"/>
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/logo_img"
+            android:layout_marginLeft="1101.5pt"
+            android:layout_marginTop="717pt"
+            android:layout_width="118pt"
+            android:layout_height="46pt"
+            android:background="@mipmap/logo"
+            />
+        
+        <TextView
+            android:layout_marginLeft="60pt"
+            android:layout_marginTop="734pt"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:background="@color/green"/>
+        <TextView
+            android:layout_marginLeft="77pt"
+            android:layout_marginTop="730pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16px"
+            android:text="Available"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_marginLeft="165pt"
+            android:layout_marginTop="734pt"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:background="@color/gray"/>
+        <TextView
+            android:layout_marginLeft="182pt"
+            android:layout_marginTop="730pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16px"
+            android:text="Unavailable"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+</layout>

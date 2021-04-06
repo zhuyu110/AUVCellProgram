@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="685pt"
+    android:layout_height="434pt"
+    android:background="@drawable/border_diaog"
+    android:layout_margin="2pt"
+    >
+    <TextView
+        android:id="@+id/time_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLose page after 20 seconds "
+        android:textColor="@color/gray50"
+        android:textSize="16px"
+        android:layout_marginTop="28pt"
+        android:layout_marginLeft="30pt"
+        />
+    <ImageView
+        android:id="@+id/close_btn"
+        android:layout_marginLeft="625pt"
+        android:layout_marginTop="18pt"
+        android:layout_width="40pt"
+        android:layout_height="40pt"
+        android:background="@mipmap/ic_close"/>
+
+    <TextView
+        android:id="@+id/showMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Unassign compartment?"
+        android:textColor="@color/black"
+        android:textSize="40px"
+        android:visibility="visible" />
+    <LinearLayout
+        android:id="@+id/showParamMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40px"
+            android:textColor="@color/black"
+            android:text="Compartment"/>
+        <TextView
+            android:id="@+id/cell_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40px"
+            android:textColor="@color/red50"
+            android:text="A-01"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40px"
+            android:textColor="@color/black"
+            android:text="open"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/showParamMessage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@+id/showParamMessage"
+        android:layout_marginTop="16pt"
+       >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40px"
+            android:textColor="@color/black"
+            android:text="ตู้ "/>
+        <TextView
+            android:id="@+id/cell_no2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40px"
+            android:textColor="@color/red50"
+            android:text="A-01"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40px"
+            android:textColor="@color/black"
+            android:text=" เปิด "/>
+    </LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="685pt"
+    android:layout_height="434pt"
+    android:background="@drawable/border_diaog">
+    <TextView
+        android:id="@+id/time_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLose page after 20 seconds "
+        android:textColor="@color/gray50"
+        android:textSize="16px"
+        android:layout_marginTop="28pt"
+        android:layout_marginLeft="30pt"
+        />
+    <ImageView
+        android:id="@+id/close_btn"
+        android:layout_marginLeft="625pt"
+        android:layout_marginTop="18pt"
+        android:layout_width="40pt"
+        android:layout_height="40pt"
+        android:background="@mipmap/ic_close"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chossStr"
+        android:textColor="@color/black"
+        android:layout_marginTop="75pt"
+        android:layout_centerHorizontal="true"
+        android:textSize="40px"/>
+    <LinearLayout
+        android:layout_width="565pt"
+        android:layout_height="225pt"
+        android:layout_marginTop="149pt"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/type1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10pt"
+            android:background="@drawable/nosel_border_bg"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="72pt"
+                android:layout_height="123pt"
+                android:background="@mipmap/img1"
+                android:layout_marginHorizontal="51pt"
+                android:layout_marginTop="19pt"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="P/N BZ1-K123000211"
+                android:textColor="@color/black"
+                android:layout_marginTop="11pt"
+                android:textSize="12px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4pt"
+                android:layout_weight="1"
+                android:gravity="top|center_horizontal"
+                android:text="Radius BZ1"
+                android:textColor="@color/black"
+                android:textSize="12px" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/type2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10pt"
+            android:background="@drawable/nosel_border_bg"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="72pt"
+                android:layout_height="123pt"
+                android:background="@mipmap/img2"
+                android:layout_marginHorizontal="51pt"
+                android:layout_marginTop="19pt"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="P/N VP5-K1234000211"
+                android:textColor="@color/black"
+                android:layout_marginTop="11pt"
+                android:textSize="12px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4pt"
+                android:layout_weight="1"
+                android:gravity="top|center_horizontal"
+                android:text="Ventis Pro 5 with pump"
+                android:textColor="@color/black"
+                android:textSize="12px" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/type3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10pt"
+            android:background="@drawable/nosel_border_bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="123pt"
+                android:layout_marginHorizontal="51pt"
+                android:layout_marginTop="19pt"
+                android:background="@mipmap/img3"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11pt"
+                android:gravity="center_horizontal"
+                android:text="P/N VP5-K1232010211"
+                android:textColor="@color/black"
+                android:textSize="12px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4pt"
+                android:layout_weight="1"
+                android:gravity="top|center_horizontal"
+                android:text="Ventis Pro 5 with pump"
+                android:textColor="@color/black"
+                android:textSize="12px" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

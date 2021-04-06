@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="88pt"
+    android:background="@drawable/number_item_border_bg"
+    android:layout_margin="2pt"
+   >
+    <LinearLayout
+        android:id="@+id/roView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="1dp"
+        >
+        <TextView
+            android:id="@+id/item_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="30px" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

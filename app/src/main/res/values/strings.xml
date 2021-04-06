@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">智能柜</string>
+    <string name="tip_double_click_exit">再次点击后退出应用！</string>
+    <string name="zy">zy</string>
+    <string name="head_str">PLEASE SCAN EMPLOYEE CARD</string>
+    <string name="admin_login_head">Service team Access</string>
+    <string name="chossStr">Choose Item Part Number</string>
+    <string name="lead_arm">You have outstanding  item</string>
+
+
+</resources>

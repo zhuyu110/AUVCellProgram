@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TableRow
+            android:id="@+id/table_head"
+            android:layout_width="match_parent"
+            android:layout_height="42pt"
+            android:background="@color/transparent"
+            >
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="型号"
+                android:textColor="@color/white"
+                android:textSize="13pt"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="产量（件）"
+                android:textColor="@color/white"
+                android:textSize="13pt"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="运行时间（h）"
+                android:textColor="@color/white"
+                android:textSize="13pt" />
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="平均耗时（分钟/件）"
+                android:textColor="@color/white"
+                android:textSize="13pt" />
+
+
+    </TableRow>
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="0.2pt"
+      android:background="@color/white"/>
+    <TableRow
+        android:id="@+id/table_body"
+        android:layout_width="match_parent"
+        android:layout_height="53pt"
+        android:background="@color/transparent">
+
+        <CheckBox
+                android:id="@+id/product_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/check_bg2"
+                android:text="AJHX1001"
+                android:paddingLeft="6pt"
+                android:textSize="13pt"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/product_count"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Ma00953"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="13pt" />
+
+        <TextView
+            android:id="@+id/runTime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="05/06"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="13pt" />
+
+        <TextView
+            android:id="@+id/avgTime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="00"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="13pt" />
+
+
+    </TableRow>
+
+
+
+</LinearLayout>

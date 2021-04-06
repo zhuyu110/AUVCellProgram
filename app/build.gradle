@@ -1,0 +1,98 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-aspectjx'
+apply plugin: "com.blankj.bus"
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        applicationId rootProject.ext.applicationId
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled = true//突破dalvik方法数65535限制  当minSdkVersion>=21只需要添加这一句  minSdkVersion<21
+        // 也就是 Android 5.0以前需要使用multex分包 要添加 implementation 'com.android.support:multidex:1.0.0'库
+        multiDexKeepFile file('multiDexKeep.txt')
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi', 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [eventBusIndex: 'com.kawa.easyconvey.MyEventBusIndex']
+            }
+        }
+    }
+    dataBinding {
+        enabled = true //使用Databind实现ui和model绑定
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    // 移除lint检查的error
+    lintOptions {
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+    packagingOptions {
+        exclude 'META-INF/*******'
+        exclude 'META-INF/INDEX.LIST'
+        exclude 'META-INF/io.netty.versions.properties'
+
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "com.android.support:design:$rootProject.ext.supportVersion"
+    implementation "com.android.support:cardview-v7:$rootProject.ext.supportVersion"
+    implementation "com.android.support:support-v4:$rootProject.ext.supportVersion"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.android.support:multidex:1.0.0'//分包混淆
+    //其中latest.release指代最新版本号，也可以指定明确的版本号，例如1.2.0
+    implementation 'org.aspectj:aspectjrt:1.8.9'//防止重复点击
+    implementation 'com.lxj:xpopup:1.8.1'//通用弹框和动画
+    // ViewModel and LiveData
+    implementation "android.arch.lifecycle:extensions:$rootProject.ext.lifecycle_version"
+    // alternatively - just ViewModel
+    implementation "android.arch.lifecycle:viewmodel:$rootProject.ext.lifecycle_version" // use -ktx for Kotlin
+    // alternatively - just LiveData
+    implementation "android.arch.lifecycle:livedata:$rootProject.ext.lifecycle_version"
+    // alternatively - Lifecycles only (no ViewModel or LiveData).
+    // Support library depends on this lightweight import
+    implementation "android.arch.lifecycle:runtime:$rootProject.ext.lifecycle_version"
+
+    annotationProcessor "android.arch.lifecycle:compiler:$rootProject.ext.lifecycle_version"
+    // alternately - if using Java8, use the following instead of compiler
+    implementation "android.arch.lifecycle:common-java8:$rootProject.ext.lifecycle_version"
+
+    // optional - ReactiveStreams support for LiveData
+    implementation "android.arch.lifecycle:reactivestreams:$rootProject.ext.lifecycle_version"
+    implementation 'com.tencent.bugly:crashreport_upgrade:latest.release'
+    implementation 'com.tencent.bugly:nativecrashreport:latest.release'
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'//tabHost的使用插件
+    implementation 'com.contrarywind:wheelview:4.1.0'
+    implementation project(path: ':commonutil')
+    implementation project(path: ':commonapi')
+
+}

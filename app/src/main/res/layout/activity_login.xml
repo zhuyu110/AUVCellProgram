@@ -1,0 +1,106 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/login_bg">
+
+        <LinearLayout
+                android:id="@+id/head_layout"
+                android:layout_width="381pt"
+                android:layout_height="56.5pt"
+                android:background="@mipmap/logo"
+                android:layout_marginTop="146.5pt"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints"/>
+
+
+
+        <RelativeLayout
+            android:id="@+id/input_view"
+            android:layout_width="437pt"
+            android:layout_height="373pt"
+            android:layout_marginTop="274pt"
+            android:background="@mipmap/input_bg"
+            android:layout_centerHorizontal="true"
+          >
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/white"
+                      android:textSize="28pt"
+                      android:text="用户登录"
+                      android:layout_marginTop="43pt"
+                      android:layout_centerHorizontal="true"/>
+            <LinearLayout
+                android:id="@+id/input_layout"
+                android:layout_width="360pt"
+                android:layout_height="127pt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="104pt"
+                android:orientation="vertical">
+
+                <com.manage.tn.auv.widget.edittext.AutoCheckEditText
+                    android:id="@+id/et_login_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="63pt"
+                    android:background="@drawable/splash_btn_bg"
+                    android:drawableEnd="@mipmap/icon_edittext_clear"
+                    android:drawableStart="@mipmap/ic_username_input"
+                    android:hint="请输入用户名"
+                    android:paddingLeft="20pt"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/gray"
+                    android:textCursorDrawable="@drawable/text_cursor_shape"
+                    android:textSize="18pt" />
+
+                <com.manage.tn.auv.widget.edittext.AutoCheckEditText
+                    android:id="@+id/et_login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="63pt"
+                    android:paddingLeft="20pt"
+                    android:background="@drawable/splash_btn_bg"
+                    android:drawableEnd="@mipmap/icon_edittext_clear"
+                    android:drawableStart="@mipmap/ic_password_input"
+                    android:hint="请输入密码"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/gray"
+                    android:textCursorDrawable="@drawable/text_cursor_shape"
+                    android:textSize="18pt" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/main_btn_login"
+                android:layout_width="360pt"
+                android:layout_height="62pt"
+                android:layout_below="@+id/input_layout"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="34pt"
+                android:background="@drawable/text_bg"
+                android:gravity="center"
+                android:paddingBottom="2dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:paddingTop="2dip"
+                android:text="登录"
+                android:textColor="@color/white"
+                android:textSize="20pt" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>
+

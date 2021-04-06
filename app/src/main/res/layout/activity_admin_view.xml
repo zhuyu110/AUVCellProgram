@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/selAll_btn"
+            android:layout_marginLeft="1121pt"
+            android:layout_marginTop="137pt"
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:textAllCaps="false"
+            android:text="Select All"
+            android:textColor="@color/white"
+            style="@style/CustomCheckBoxTheme"
+            />
+        <TextView
+            android:layout_marginLeft="464pt"
+            android:layout_marginTop="38pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40px"
+            android:textColor="@color/white"
+            android:text="Management Page"
+
+            />
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_marginLeft="30pt"
+            android:layout_marginTop="20pt"
+            android:layout_width="80pt"
+            android:layout_height="80pt"
+            android:background="@mipmap/ic_back"
+            />
+
+        <ImageView
+            android:id="@+id/ic_time_set"
+            android:layout_marginLeft="1160pt"
+            android:layout_marginTop="20pt"
+            android:layout_width="80pt"
+            android:layout_height="80pt"
+            android:background="@mipmap/ic_time_set"
+            />
+        <com.flyco.tablayout.SegmentTabLayout
+            android:id="@+id/tabhost"
+            android:layout_marginLeft="40pt"
+            android:layout_marginTop="120pt"
+            android:layout_width="wrap_content"
+            android:layout_height="50pt"
+            app:tl_bar_color="@color/transparent"
+            app:tl_textSelectColor="@color/white"
+            app:tl_textUnselectColor="@color/diy_gray"
+            app:tl_indicator_color="@color/gray50"
+            app:tl_indicator_corner_radius="15pt"
+            app:tl_tab_padding="2dp"
+            app:tl_textsize="20px" />
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_marginLeft="40pt"
+            android:layout_marginTop="190pt"
+            android:layout_width="1200pt"
+            android:layout_height="530pt" />
+
+
+        <Button
+            android:id="@+id/set_btn"
+            android:layout_marginLeft="870pt"
+            android:layout_marginTop="735pt"
+            android:layout_width="180pt"
+            android:layout_height="50pt"
+            style="@style/oper_blue_btn"
+            android:textSize="16px"
+            android:gravity="center"
+            android:text="Seting"
+            />
+        <Button
+            android:id="@+id/open_btn"
+            android:layout_marginLeft="1060pt"
+            android:layout_marginTop="735pt"
+            android:layout_width="180pt"
+            android:layout_height="50pt"
+            style="@style/oper_blue_btn"
+            android:gravity="center"
+            android:textSize="16px"
+            android:text="Open Compartment"
+            />
+
+        <TextView
+            android:layout_marginLeft="40pt"
+            android:layout_marginTop="755pt"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:background="@color/green"/>
+        <TextView
+            android:layout_marginLeft="59pt"
+            android:layout_marginTop="751pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16px"
+            android:text="Available"
+            android:textColor="@color/gray50"/>
+        <TextView
+            android:layout_marginLeft="145pt"
+            android:layout_marginTop="755pt"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:background="@color/gray"/>
+        <TextView
+            android:layout_marginLeft="164.5pt"
+            android:layout_marginTop="751pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16px"
+            android:text="Unavailable"
+            android:textColor="@color/gray50"/>
+        <TextView
+            android:layout_marginLeft="269pt"
+            android:layout_marginTop="755pt"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:background="@color/yellow"/>
+        <TextView
+            android:layout_marginLeft="288.5pt"
+            android:layout_marginTop="751pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16px"
+            android:text="Timeout"
+            android:textColor="@color/gray50"/>
+        <TextView
+            android:layout_marginLeft="369pt"
+            android:layout_marginTop="755pt"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:background="@color/red"/>
+        <TextView
+            android:layout_marginLeft="386pt"
+            android:layout_marginTop="751pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16px"
+            android:text="Return Fail"
+            android:textColor="@color/gray50"/>
+
+        <TextView
+            android:layout_marginLeft="480pt"
+            android:layout_marginTop="755pt"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:background="@color/violet"/>
+        <TextView
+            android:layout_marginLeft="497pt"
+            android:layout_marginTop="751pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16px"
+            android:text="Expiry"
+            android:textColor="@color/gray50"/>
+
+        <TextView
+            android:layout_marginLeft="560pt"
+            android:layout_marginTop="755pt"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:background="@color/init_gray"/>
+        <TextView
+            android:layout_marginLeft="577pt"
+            android:layout_marginTop="751pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16px"
+            android:text="Initial state"
+            android:textColor="@color/gray50"/>
+
+    </RelativeLayout>
+</layout>

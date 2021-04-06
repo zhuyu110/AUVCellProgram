@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1066pt"
+    android:layout_height="700pt"
+    android:background="@drawable/border_diaog">
+    <ImageView
+        android:id="@+id/close_btn"
+        android:layout_marginLeft="1006pt"
+        android:layout_marginTop="18pt"
+        android:layout_width="40pt"
+        android:layout_height="40pt"
+        android:background="@mipmap/ic_close"/>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40px"
+        android:layout_marginTop="58pt"
+        android:layout_marginLeft="311pt"
+        android:textColor="@color/black"
+        android:text=""
+        />
+    <TextView
+        android:id="@+id/title_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30px"
+        android:layout_marginTop="169pt"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/gray50"
+        android:text=""
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/gir_cy"
+        android:layout_marginHorizontal="58pt"
+        android:layout_marginTop="274pt"
+        android:layout_marginBottom="85pt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

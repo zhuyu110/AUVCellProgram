@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="236pt"
+    android:layout_height="138pt"
+    android:padding="0.5pt"
+    android:layout_margin="2pt"
+    >
+    <RelativeLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/cell_no"
+        android:layout_marginTop="14pt"
+        android:layout_marginLeft="15pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="28px"
+        android:text="#A-1"/>
+
+    <TextView
+        android:id="@+id/operator_btn"
+        android:layout_marginTop="17pt"
+        android:layout_marginLeft="146pt"
+        android:layout_width="70pt"
+        android:layout_height="24pt"
+        android:textColor="@color/white50"
+        android:textSize="12px"
+        android:gravity="center"
+        android:background="@drawable/btn_bg"
+        android:text="Unassign"/>
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_marginTop="49pt"
+        android:layout_marginLeft="15pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="16px"
+        android:text="Item Name"/>
+    <TextView
+        android:id="@+id/exprot_date"
+        android:layout_marginTop="68pt"
+        android:layout_marginLeft="15pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="12px"
+        android:text="2021/01/02-2021/05/09"/>
+    <TextView
+        android:id="@+id/partNo"
+        android:layout_marginTop="88pt"
+        android:layout_marginLeft="15pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="16px"
+        android:text="P/N:001"/>
+
+        <TextView
+            android:id="@+id/deviceNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15pt"
+            android:layout_marginTop="105pt"
+            android:text="S/N:001"
+            android:textColor="@color/white"
+            android:textSize="16px" />
+
+        <ImageView
+            android:id="@+id/edit_btn"
+            android:layout_marginTop="106.8pt"
+            android:layout_marginLeft="197.3pt"
+            android:layout_width="20pt"
+            android:layout_height="20pt"
+            android:background="@mipmap/ic_edit"/>
+    </RelativeLayout>
+</RelativeLayout>

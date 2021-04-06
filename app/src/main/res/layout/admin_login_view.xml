@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="750pt"
+        android:layout_height="700pt"
+        android:background="@drawable/border_diaog">
+        <ImageView
+            android:id="@+id/close_btn"
+            android:layout_marginLeft="690pt"
+            android:layout_marginTop="18pt"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:background="@mipmap/ic_close"/>
+        <TextView
+            android:layout_marginLeft="168pt"
+            android:layout_marginTop="80pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/admin_login_head"
+            android:textSize="40px"
+            android:textColor="@color/black"/>
+        <com.manage.tn.auv.widget.edittext.AutoCheckEditText
+            android:id="@+id/login_password"
+            android:layout_marginTop="144pt"
+            android:layout_marginLeft="89pt"
+            android:padding="2dp"
+            android:layout_width="572pt"
+            android:layout_height="88pt"
+            android:editable="false"
+            android:gravity="center"
+            android:hint="Password"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="textPassword"
+            android:textColor="@color/gray50"
+            android:textColorHint="@color/gray50"
+            android:textSize="30px"
+            android:background="@drawable/splash_btn_bg"
+             />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/number_rcy"
+            android:layout_marginTop="248pt"
+            android:layout_marginLeft="89pt"
+            android:layout_centerHorizontal="true"
+            android:layout_width="572pt"
+            android:layout_height="400pt"/>
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,40 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.hujiang.aspectjx:gradle-android-plugin-aspectjx:2.0.4'//AOP切面编程
+        classpath 'com.blankj:bus-gradle-plugin:2.4'//busutil插件
+        classpath'org.greenrobot:greendao-gradle-plugin:3.2.2'
+        classpath 'com.novoda:bintray-release:0.8.0' //上传模块github
+
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+ext{
+    compileSdkVersion = 28
+    buildToolsVersion = "28.0.3"
+    applicationId ="com.manage.tn.auv"
+    minSdkVersion = 21  //21一下 也就是 Android 5.0以前需要使用multex分包
+    targetSdkVersion = 28
+    versionCode = 1
+    versionName = "v1.0"
+    supportVersion = '27.1.1'
+    lifecycle_version = "1.1.1"
+}

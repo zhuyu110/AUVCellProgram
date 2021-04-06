@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="192dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:scaleType="centerCrop"
+        android:src="@drawable/common_bg_header" />
+
+    <ImageView
+        android:id="@+id/baseDrawerNavHeaderAvatarIv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/descTv"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/common_avatar_round" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_above="@+id/descTv"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/baseDrawerNavHeaderAvatarIv"
+        android:gravity="center_vertical"
+        android:text="zy"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/descTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="认真努力，加油！"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+</RelativeLayout>

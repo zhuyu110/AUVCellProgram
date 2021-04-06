@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="685pt"
+    android:layout_height="534pt"
+    android:layout_margin="2pt"
+    android:background="@drawable/border_diaog">
+
+    <TextView
+        android:id="@+id/time_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30pt"
+        android:layout_marginTop="28pt"
+        android:text="CLose page after 20 seconds "
+        android:textColor="@color/gray50"
+        android:textSize="16px" />
+
+    <ImageView
+        android:id="@+id/close_btn"
+        android:layout_width="40pt"
+        android:layout_height="40pt"
+        android:layout_marginLeft="625pt"
+        android:layout_marginTop="18pt"
+        android:background="@mipmap/ic_close" />
+
+    <LinearLayout
+        android:layout_width="100pt"
+        android:layout_height="130pt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86pt"
+        android:background="@drawable/nosel_border_bg">
+
+        <ImageView
+            android:id="@+id/deviceImg"
+            android:layout_width="72pt"
+            android:layout_height="123pt"
+            android:layout_margin="10pt"
+            android:background="@mipmap/img1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220pt"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/showText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="40px"
+            />
+
+        <LinearLayout
+            android:id="@+id/returnLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="TAG No: "
+                android:textColor="@color/black"
+                android:textSize="35px" />
+
+            <TextView
+                android:id="@+id/serviceNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:textColor="@color/red50"
+                android:textSize="35px" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100pt"
+        android:layout_marginTop="368pt"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/canclebtn"
+            style="@style/light_gray_btn"
+            android:layout_width="200pt"
+            android:layout_height="90pt"
+            android:layout_gravity="center"
+            android:layout_marginRight="50pt"
+            android:background="@color/white50"
+            android:text="Cancel"
+            android:textSize="15pt" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/dark_blue_btn"
+            android:layout_width="200pt"
+            android:layout_height="90pt"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50pt"
+            android:background="@color/blue50"
+            android:text="Confirm"
+            android:textSize="15pt" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+
