@@ -50,7 +50,7 @@ import com.manage.tn.auv.widget.dialog.CustomHaveReturnAlarmDialog;
 import com.manage.tn.auv.widget.dialog.CustomLeaderReturnMainDialog;
 import com.manage.tn.auv.widget.dialog.CustomReturnAlarmCentryDialog;
 import com.manage.tn.auv.widget.dialog.CustomShowMessageCentryDialog;
-
+import com.tencent.bugly.beta.Beta;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -240,6 +240,7 @@ public class MainActivity extends BaseActivity<ActivityHomeBinding> {
                 public void run() {
                     operators = AppDatabase.getInstance(getApplication()).getAllOperation();
                     LiveEventBus.get("RefreshUI",String.class).post("RefreshUI");
+                    Beta.checkUpgrade();
                     if(!MyApplication.isFirst){
                         userLoginViewModel.login("2_sprc","97RgHj2dPCENqCwj");
                     }else {
@@ -731,19 +732,19 @@ public class MainActivity extends BaseActivity<ActivityHomeBinding> {
         updateToServerViewModel.getMLDByCode(this,uploadLockers, List.class,true).observe(this, (success) -> {
             if (success != null) {
                 updateToServerViewModel.uploadBins(deviceList);
-                LogUtils.d("上传Locker数据成！");
+                LogUtils.d("上传Locker数据成功！");
             }
         });
         updateToServerViewModel.getMLDByCode(this,uploadBins, List.class,true).observe(this, (success) -> {
             if (success != null) {
                 updateToServerViewModel.uploadItems(deviceList);
-                LogUtils.d("上传BIN和Item数据成！");
+                LogUtils.d("上传BIN和Item数据成功！");
 
             }
         });
         userLoginViewModel.getMLDByCode(this,uploadOperators,List.class,true).observe(this,(success)->{
             if (success != null){
-                LogUtils.d("上传操作LOG数据成！");
+                LogUtils.d("上传操作LOG数据成功！");
                 ThreadUtils.getFixedPool(3).execute(new Runnable() {
                     @Override
                     public void run() {
